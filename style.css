@@ -15,18 +15,17 @@ min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: rgb(21, 21, 47);
-
+/*background-color: rgb(21, 21, 47);*/
+background-image: url(http://source.unsplash.com/1600x900/?nature,mountains,glaciers,water);
 }
 
 .container{
-
 width: 400px;
 height: min-content;
-background-color: #fff;
+background-color: rgb(208, 208, 208);
 border-radius: 8px;
 padding: 28px;
-
+border: solid 2px;
 }
 
 .search-box{
@@ -43,9 +42,10 @@ padding: 28px;
 width: 85%;
 font-size: 18px;
 color: black;
-background-color: rgb(232, 250, 255);
+background-color: rgb(251, 251, 251);
 padding: 12px 14px;
 border-radius: 8px;
+border: solid 2px;
 
 }
 
@@ -62,12 +62,108 @@ color: black;
     background-color: rgb(232, 250, 255);
     cursor: pointer;
     border-radius: 50%;
+    border: solid 2px;
 
 }
 
-.search-box button:hover{                        /*********IMP**************/
+.search-box button:hover{                        /*********IMP************/
 
     color: #fff;
     background-color: #ababab;
 
+}
+
+.weather-body{
+display: none;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-block: 20px;
+max-height: 100%;
+transition: max-height 2s;
+transition-timing-function: ease-out;
+}
+
+
+.weather-body img{
+width: 60%;
+margin-bottom: 25px;
+margin-top: -20px;
+}
+
+.weather-box{
+margin-bottom: 20px;
+text-align: center;
+}
+
+.weather-box .temperature{
+font-size: 40px;
+font-weight: 500;
+position: relative;
+}
+
+.weather-box .temperature  sup{ 
+
+font-size: 20px;
+font-weight: 750;
+position:absolute
+}
+
+.weather-box .description{
+font-size: 20px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.weather-details{
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+}
+
+.humidity, .wind{
+display: flex;
+align-items: center;
+}
+
+.weather-details i{
+font-size: 35px;
+}
+
+.weather-details .text{
+
+margin-left: 6px;
+font-size: 16px;
+
+}
+
+.text span{
+font-size: 16px;
+font-weight: 600;
+}
+
+.type{
+font-weight:550;
+}
+
+.wtype{
+font-weight:550;
+}
+
+.location-not-found{
+margin: 20px;
+display: none;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.location-not-found img{
+    width: 100%;
+}
+.location-not-found h1{
+    font-size: 25px;
+    color:#2b2b2b;
+    margin-bottom: 20px;
 }
