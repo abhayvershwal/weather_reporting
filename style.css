@@ -16,16 +16,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 /*background-color: rgb(21, 21, 47);*/
-background-image: url(http://source.unsplash.com/1600x900/?nature,mountains,glaciers,water);
+background-image: url(http://source.unsplash.com/1600x900/?weather,night,stars,snow,greenlight);
 }
 
 .container{
 width: 400px;
 height: min-content;
-background-color: rgb(208, 208, 208);
+background-color: #00123d;
 border-radius: 8px;
 padding: 28px;
 border: solid 2px;
+transition: max-height 2s;
 }
 
 .search-box{
@@ -99,6 +100,7 @@ text-align: center;
 .weather-box .temperature{
 font-size: 40px;
 font-weight: 500;
+color: yellow;
 position: relative;
 }
 
@@ -113,6 +115,7 @@ position:absolute
 font-size: 20px;
 font-weight: 700;
 text-transform: capitalize;
+color: yellow;
 }
 
 .weather-details{
@@ -120,15 +123,18 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 margin-top: 30px;
+color: yellow;
 }
 
 .humidity, .wind{
 display: flex;
 align-items: center;
+color: yellow;
 }
 
 .weather-details i{
 font-size: 35px;
+color: yellow;
 }
 
 .weather-details .text{
