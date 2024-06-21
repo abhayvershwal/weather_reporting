@@ -16,7 +16,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 /*background-color: rgb(21, 21, 47);*/
-background-image: url(http://source.unsplash.com/1600x900/?weather,night,stars,snow,greenlight);
+background-image: url("image.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 }
